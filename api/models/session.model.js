@@ -5,6 +5,8 @@ const schema = new mongoose.Schema(
     user: {
       type: mongoose.Schema.Types.ObjectId,
       // TODO: reference to user model
+      ref: "User",
+      required: true,
     },
     lastAccess: {
       type: Date,
